@@ -1,6 +1,6 @@
 # Mohammedd.com
 
-### My personal website, built with Next.js, Framer Motion, TypeScript, React-Email, and Tailwind CSS, to showcase my work and experience.
+#### My personal website, built with Next.js, Framer Motion, TypeScript, React-Email, and Tailwind CSS, to showcase my work and experience.
 
 ## Getting Started
 
