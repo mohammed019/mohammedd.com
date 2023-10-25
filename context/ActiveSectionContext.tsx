@@ -7,9 +7,7 @@ import {
   useContext,
   useState,
 } from "react";
-import { links } from "@/lib/data";
-
-type ISection = (typeof links)[number]["name"];
+import type { ISection } from "@/lib/types";
 
 type IActiveSectionType = {
   activeSection: ISection;
