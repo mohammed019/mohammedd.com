@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Home", 0.3);
+  const { ref } = useSectionInView("Contact", 0.3);
 
   return (
     <motion.section
@@ -44,6 +44,14 @@ export default function Contact() {
           await sendEmail(formData);
         }}
       >
+        <input
+          className="h-14 px-4 mb-3 rounded-lg borderBlack outline-none focus:outline-black/30"
+          type="text"
+          name="name"
+          required
+          maxLength={500}
+          placeholder="Your Name"
+        />
         <input
           className="h-14 px-4 rounded-lg borderBlack outline-none focus:outline-black/30"
           type="email"
