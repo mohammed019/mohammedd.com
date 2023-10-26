@@ -25,7 +25,7 @@ export default function Skills() {
     <section
       ref={ref}
       id="skills"
-      className="max-w-[58rem] scroll-mt-28 text-center mb-28"
+      className="max-w-[58rem] scroll-mt-28 text-center mb-8"
     >
       <SectionHeading>My Skills</SectionHeading>
 
@@ -33,7 +33,7 @@ export default function Skills() {
         {skillsData.map((skill, i) => (
           <motion.li
             key={i}
-            className="bg-white border border-black/10 rounded-xl px-5 py-3"
+            className="bg-white borderBlack rounded-xl px-5 py-3"
             variants={fadeInAnimations}
             initial="initial"
             whileInView="animate"

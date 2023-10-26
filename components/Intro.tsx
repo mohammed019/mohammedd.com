@@ -15,6 +15,9 @@ import { useSectionInView } from "@/lib/hooks";
 export const Intro = () => {
   const { ref } = useSectionInView("Home", 0.3);
 
+  const { activeSection, setActiveSection, setTimeOfLastCLick } =
+    useActiveSectionContext();
+
   return (
     <section
       ref={ref}
@@ -80,13 +83,17 @@ export const Intro = () => {
         <Link
           className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           href={"#contact"}
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastCLick(Date.now());
+          }}
         >
           Contact me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
           href="/resume.pdf"
           download
         >
