@@ -1,0 +1,19 @@
+Hello guys
+
+I have error when i try to import:
+   const { pending } = useFormStatus();
+
+
+First of all the useFormStatus should be inside a form tag that is why i create another file for yhe submit button, and fix error I have just changed below packages from:
+
+    "react": "^18",
+    "react-dom": "^18",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+
+Into:
+
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
