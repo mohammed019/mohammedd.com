@@ -3,9 +3,5 @@
   to = "/"
   status = 200
 
-[context.production]
-  publish = "output/"
-  command = "make publish"
-
-[context.deploy-preview]
-  publish = "dist/"
+[build.environment]
+  RESEND_API_KEY = "re_dCC8Rj7A_PEyBm9yVSd2DbHKXhS5zzgue"
