@@ -10,7 +10,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-16 scroll-mt-28 max-w-[45rem] text-center leading-8"
+      className="sm:mb-16 scroll-mt-28 max-w-[45rem] text-center leading-8"
       initial={{
         opacity: 0,
         y: 100,

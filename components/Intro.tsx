@@ -15,14 +15,14 @@ import { useSectionInView } from "@/lib/hooks";
 export const Intro = () => {
   const { ref } = useSectionInView("Home", 0.3);
 
-  const { activeSection, setActiveSection, setTimeOfLastCLick } =
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
   return (
     <section
       ref={ref}
       id="home"
-      className="mb-28 scroll-mt-96 max-w-[50rem] text-center sm:mb-0"
+      className="sm:mb-28 scroll-mt-96 max-w-[50rem] text-center"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -85,7 +85,7 @@ export const Intro = () => {
           href={"#contact"}
           onClick={() => {
             setActiveSection("Contact");
-            setTimeOfLastCLick(Date.now());
+            setTimeOfLastClick(Date.now());
           }}
         >
           Contact me here
@@ -93,7 +93,7 @@ export const Intro = () => {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/resume.pdf"
           download
         >
@@ -102,14 +102,14 @@ export const Intro = () => {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950 cursor-pointer border border-black/20"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950 cursor-pointer border border-black/20 dark:bg-white/10 dark:text-white/60"
           target="_blank"
           href="https://www.linkedin.com/in/mohammed-jabbar019/"
         >
           <BsLinkedin />
         </a>
         <a
-          className="bg-white p-4  text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950 cursor-pointer border border-black/20"
+          className="bg-white p-4  text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition hover:text-gray-950 cursor-pointer border border-black/20 dark:bg-white/10 dark:text-white/60"
           target="_blank"
           href="https://github.com/mohammed019"
         >
