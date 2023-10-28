@@ -3,7 +3,7 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
-  distDir: "out",
+  distDir: "next",
 };
 
 module.exports = nextConfig;
