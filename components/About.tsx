@@ -27,30 +27,25 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
 
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        Hello, I'm <span className="font-semibold">Mohammed</span>, a passionate
+        and skilled web developer residing in Erbil, Iraq. At just 19 years old,
+        I bring a wealth of expertise in{" "}
+        <span className="font-semibold">IT support and Web development</span> to
+        the table. My technical arsenal includes React, Next.js, Tailwind CSS,
+        Bootstrap, and MongoDB. I'm also well-versed in TypeScript, Prisma, Git,
+        and Framer Motion. As a Linux enthusiast, I've honed my{" "}
+        <span className="underline">problem-solving</span> abilities and
+        collaborated effectively within teams. Alongside my development skills,
+        I possess a flair for basic{" "}
+        <span className="italic">photo editing and design tasks</span>.
+        Proficient in Microsoft Word and Excel.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        I approach every task with enthusiasm and a determination to learn.
+        Eager to expand my horizons, I am a dedicated professional ready to
+        contribute and create in{" "}
+        <span className="italic font-semibold">the world of technology</span>.
       </p>
     </motion.section>
   );
