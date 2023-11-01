@@ -9,6 +9,7 @@ export default function About() {
 
   return (
     <motion.section
+      id="about"
       ref={ref}
       className="sm:mb-16 scroll-mt-28 max-w-[45rem] text-center leading-8"
       initial={{
@@ -22,7 +23,6 @@ export default function About() {
       transition={{
         delay: 0.175,
       }}
-      id="about"
     >
       <SectionHeading>About Me</SectionHeading>
 

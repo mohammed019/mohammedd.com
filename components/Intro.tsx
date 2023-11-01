@@ -20,8 +20,8 @@ export const Intro = () => {
 
   return (
     <section
+    id="home"
       ref={ref}
-      id="home"
       className="sm:mb-28 scroll-mt-96 max-w-[50rem] text-center"
     >
       <div className="flex items-center justify-center">
