@@ -47,7 +47,7 @@ export default function Contact() {
           const sender = formData.get("sender");
           const message = formData.get("message");
 
-          const data = await fetch("/api/send", {
+          const response = await fetch("/api/send", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -55,6 +55,8 @@ export default function Contact() {
             },
             body: JSON.stringify({ name, sender, message }),
           });
+
+          const data = await response.json();
 
           if (data?.error) {
             toast.error(data?.error);

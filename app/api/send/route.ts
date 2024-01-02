@@ -1,7 +1,6 @@
 import { getErrorMessage, validateString } from "@/lib/utils";
 import { Resend } from "resend";
 import ContactFormEmail from "@/email/ContactFormEmail";
-import { NextResponse } from "next/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -10,10 +9,10 @@ export async function POST(request: Request) {
 
   // validation
   if (!validateString(sender, 500)) {
-    return NextResponse.json({ error: "invalid sender email" });
+    return Response.json({ error: "invalid sender email" });
   }
   if (!validateString(message, 5000)) {
-    return NextResponse.json({ error: "invalid message" });
+    return Response.json({ error: "invalid message" });
   }
 
   let data;
@@ -34,5 +33,5 @@ export async function POST(request: Request) {
     error: getErrorMessage(error);
   }
 
-  return NextResponse.json({ data });
+  return Response.json({ data });
 }
