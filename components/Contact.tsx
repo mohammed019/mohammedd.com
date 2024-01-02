@@ -43,10 +43,21 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-          if (error) {
-            console.log(error);
-            toast.error(error);
+          const name = formData.get("name");
+          const sender = formData.get("sender");
+          const message = formData.get("message");
+
+          const data = await fetch("/api/send", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: JSON.stringify({ name, sender, message }),
+          });
+
+          if (data?.error) {
+            toast.error(data?.error);
             return;
           } else {
             toast.success("Email sent successfully!");
