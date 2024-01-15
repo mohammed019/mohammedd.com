@@ -32,10 +32,10 @@ export default function Contact() {
         Please contact me directly at{" "}
         <a
           className="underline"
-          href="mailto:mohammedjabbar019@gmail"
+          href="mailto:mail@mohammedd.com"
           target="_blank"
         >
-          mohammedjabbar019@gmail.com
+          mail@mohammedd.com
         </a>{" "}
         or through this form.
       </p>
